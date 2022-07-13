@@ -1,2 +1,4 @@
 sass assets/css/scss/bootstrap.scss:assets/css/bootstrap.min.css --style compressed
 sass assets/css/scss/custom.scss:assets/css/style.min.css --style compressed
+
+sass --watch assets/css/scss/custom.scss:assets/css/style.min.css --style compressed

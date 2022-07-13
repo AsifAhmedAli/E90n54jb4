@@ -37,6 +37,7 @@
                       type="button"
                       id="dropdownMenuButton1"
                       data-bs-toggle="dropdown"
+                      data-bs-auto-close="outside"
                       aria-expanded="false"
                     >
                       <i class="fa-solid fa-shop"></i>
@@ -54,15 +55,32 @@
                       class="dropdown-menu"
                       aria-labelledby="dropdownMenuButton1"
                     >
-                      <li><a class="dropdown-item" href="#">Action</a></li>
-                      <li>
-                        <a class="dropdown-item" href="#">Another action</a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item" href="#"
-                          >Something else here</a
-                        >
-                      </li>
+                      <div class="header-mayfield-dropdown px-3 py-2">
+                        <h4 class="page-title">Your Store</h4>
+                        <form action="">
+                          <select name="" id="" class="form-select">
+                            <option value="">Mayfield Heights</option>
+                          </select>
+                        </form>
+                        <p class="address">
+                          1349 Som Center Rd<br />Eastgate Shopping Center<br />Mayfield
+                          Heights, OH 44124
+                        </p>
+                        <p class="status text-success">Open Now</p>
+                        <p class="time">Mon - Sat 10 to 9, Sun 11 to 6</p>
+                        <div class="d-flex">
+                          <button
+                            class="btn btn-sm btn-primary text-uppercase text-nowrap me-2"
+                          >
+                            Get Directions
+                          </button>
+                          <button
+                            class="btn btn-sm btn-primarydark text-uppercase text-nowrap me-2"
+                          >
+                            Shop My Store
+                          </button>
+                        </div>
+                      </div>
                     </ul>
                   </div>
                   <div class="dropdown">
@@ -89,15 +107,64 @@
                       class="dropdown-menu"
                       aria-labelledby="dropdownMenuButton1"
                     >
-                      <li><a class="dropdown-item" href="#">Action</a></li>
-                      <li>
-                        <a class="dropdown-item" href="#">Another action</a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item" href="#"
-                          >Something else here</a
-                        >
-                      </li>
+                      <div class="header-mayfield-dropdown px-3 py-2">
+                        <h4 class="page-title">Your Account</h4>
+                        <div class="d-flex align-items-center gap-2 mb-2">
+                          <img
+                            src="./assets/images/profile-image.png"
+                            alt=""
+                            class="user-img"
+                          />
+                          <div>
+                            <p class="user-name">Rick Mershad</p>
+                            <p class="user-duration">Customer Since 2012</p>
+                          </div>
+                        </div>
+                        <div class="row g-2">
+                          <div class="d-flex gap-2">
+                            <a
+                              href=""
+                              class="btn btn-sm btn-outline-secondary text-nowrap visit pe-4"
+                            >
+                              Account
+                            </a>
+                            <a
+                              href=""
+                              class="btn btn-sm btn-outline-secondary text-nowrap visit pe-4"
+                            >
+                              Orders
+                            </a>
+                          </div>
+                          <div class="d-flex gap-2">
+                            <a
+                              href=""
+                              class="btn btn-sm btn-outline-secondary text-nowrap visit pe-4"
+                            >
+                              Favorites
+                            </a>
+                            <a
+                              href=""
+                              class="btn btn-sm btn-outline-secondary text-nowrap visit pe-4"
+                            >
+                              Returns
+                            </a>
+                          </div>
+                          <div class="d-flex gap-2">
+                            <a
+                              href=""
+                              class="btn btn-sm btn-outline-secondary text-nowrap visit pe-4"
+                            >
+                              Service
+                            </a>
+                            <a
+                              href=""
+                              class="btn btn-sm btn-outline-secondary text-nowrap visit pe-4"
+                            >
+                              Logout
+                            </a>
+                          </div>
+                        </div>
+                      </div>
                     </ul>
                   </div>
                   <a href="" class="cart">
@@ -196,40 +263,138 @@
                       aria-labelledby="dropdownMenuButton1"
                     >
                       <li>
-                        <a class="dropdown-item" href="#">
-                          <div class="btn-group dropend">
-                            <button
-                              type="button"
-                              class="btn"
-                              data-bs-toggle="dropdown"
-                              aria-expanded="false"
-                            >
-                              Refurbished Deals
-                              <i class="fa-solid fa-chevron-right"></i>
-                            </button>
-                            <ul class="dropdown-menu">
-                              <!-- Dropdown menu links -->
-                            </ul>
+                        <a href="" class="dropdown-item">Refurbished Deals</a>
+                        <div class="sub-menu">
+                          <div class="row gy-4">
+                            <div class="col-lg-4">
+                              <h5 class="heading">Computers</h5>
+                              <hr>
+                              <ul class="list-unstyled">
+                                <li>
+                                  <a href="">Desktops</a>
+                                  <a href="">Laptops / Notebooks</a>
+                                  <a href="">iPads / Tablets</a>
+                                  <a href="">View All</a>
+                                </li>
+                              </ul>
+                            </div>
+                            <div class="col-lg-4">
+                              <h5 class="heading">Computer Parts</h5>
+                              <hr>
+                              <ul class="list-unstyled">
+                                <li>
+                                  <a href="">Video Cards</a>
+                                  <a href="">Hard Drives & Data</a>
+                                  <a href="">Storage</a>
+                                  <a href="">Keyboards & Mice</a>
+                                  <a href="">View All</a>
+                                </li>
+                              </ul>
+                            </div>
+                            <div class="col-lg-4">
+                              <h5 class="heading">Assessories</h5>
+                              <hr>
+                              <ul class="list-unstyled">
+                                <li>
+                                  <a href="">Printer Supplies</a>
+                                  <a href="">Surge Protectors & UPS</a>
+                                  <a href="">AC Adapters & Power</a>
+                                  <a href="">Inverters</a>
+                                  <a href="">View All</a>
+                                </li>
+                              </ul>
+                            </div>
+                            <div class="col-lg-4">
+                              <h5 class="heading">Electronics</h5>
+                              <hr>
+                              <ul class="list-unstyled">
+                                <li>
+                                  <a href="">LED Monitors</a>
+                                  <a href="">LED/LCD HDTVs</a>
+                                  <a href="">Printers</a>
+                                  <a href="">View All</a>
+                                </li>
+                              </ul>
+                            </div>
+                            <div class="col-lg-4">
+                              <h5 class="heading">Other Categories</h5>
+                              <hr>
+                              <ul class="list-unstyled">
+                                <li>
+                                  <a href="">Apple</a>
+                                  <a href="">Networking</a>
+                                  <a href="">Gaming</a>
+                                </li>
+                              </ul>
+                            </div>
+                            <div class="col-lg-4">
+                              <h5 class="heading">Explore All Categories</h5>
+                              <hr>
+                              <ul class="list-unstyled">
+                                <li>
+                                  <a href="">View All Refurbished</a>
+                                  <a href="">Products</a>
+                                </li>
+                              </ul>
+                            </div>
                           </div>
-                        </a>
+                        </div>
                       </li>
                       <li>
-                        <a class="dropdown-item" href="#">
-                          <div class="btn-group dropend">
-                            <button
-                              type="button"
-                              class="btn"
-                              data-bs-toggle="dropdown"
-                              aria-expanded="false"
-                            >
-                              Software & Gaming
-                              <i class="fa-solid fa-chevron-right"></i>
-                            </button>
-                            <ul class="dropdown-menu">
-                              <!-- Dropdown menu links -->
-                            </ul>
-                          </div>
-                        </a>
+                        <a href="" class="dropdown-item">Clearance</a>
+                        <div class="sub-menu">submenu again</div>
+                      </li>
+                      <li>
+                        <a href="" class="dropdown-item">Hot Ad Deals</a>
+                        <div class="sub-menu">submenu again</div>
+                      </li>
+                      <li>
+                        <a href="" class="dropdown-item">Computers</a>
+                        <div class="sub-menu">submenu again</div>
+                      </li>
+                      <li>
+                        <a href="" class="dropdown-item">Apple</a>
+                        <div class="sub-menu">submenu again</div>
+                      </li>
+                      <li>
+                        <a href="" class="dropdown-item">Computer Parts</a>
+                        <div class="sub-menu">submenu again</div>
+                      </li>
+                      <li>
+                        <a href="" class="dropdown-item">PC Builders</a>
+                        <div class="sub-menu">submenu again</div>
+                      </li>
+                      <li>
+                        <a href="" class="dropdown-item">Electronics</a>
+                        <div class="sub-menu">submenu again</div>
+                      </li>
+                      <li>
+                        <a href="" class="dropdown-item">Maker/STEM</a>
+                        <div class="sub-menu">submenu again</div>
+                      </li>
+                      <li>
+                        <a href="" class="dropdown-item">Networking</a>
+                        <div class="sub-menu">submenu again</div>
+                      </li>
+                      <li>
+                        <a href="" class="dropdown-item">Assessories</a>
+                        <div class="sub-menu">submenu again</div>
+                      </li>
+                      <li>
+                        <a href="" class="dropdown-item">Software & Gaming</a>
+                        <div class="sub-menu">submenu again</div>
+                      </li>
+                      <li>
+                        <a href="" class="dropdown-item">Service & Repair</a>
+                        <div class="sub-menu">submenu again</div>
+                      </li>
+                      <li>
+                        <a href="" class="dropdown-item">Help</a>
+                        <div class="sub-menu">submenu again</div>
+                      </li>
+                      <li>
+                        <a href="" class="dropdown-item">Community</a>
+                        <div class="sub-menu">submenu again</div>
                       </li>
                     </ul>
                   </div>
@@ -244,20 +409,130 @@
                       Brands
                       <i class="fa-solid fa-chevron-down"></i>
                     </button>
-                    <ul
-                      class="dropdown-menu"
-                      aria-labelledby="dropdownMenuButton1"
-                    >
-                      <li><a class="dropdown-item" href="#">Action</a></li>
-                      <li>
-                        <a class="dropdown-item" href="#">Another action</a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item" href="#"
-                          >Something else here</a
-                        >
-                      </li>
-                    </ul>
+                    <div class="dropdown-menu brands container px-3">
+                      <div class="row">
+                        <div class="col-6">
+                          <a href="">
+                            <img src="./assets/images/brands/acer.png" alt="">
+                          </a>
+                          <hr>
+                        </div>
+                        <div class="col-6">
+                          <a href="">
+                            <img src="./assets/images/brands/amd.png" alt="">
+                          </a>
+                          <hr>
+                        </div>
+                        <div class="col-6">
+                          <a href="">
+                            <img src="./assets/images/brands/authorizedreseller.png" alt="">
+                          </a>
+                          <hr>
+                        </div>
+                        <div class="col-6">
+                          <a href="">
+                            <img src="./assets/images/brands/asus.png" alt="">
+                          </a>
+                          <hr>
+                        </div>
+                        <div class="col-6">
+                          <a href="">
+                            <img src="./assets/images/brands/brother.png" alt="">
+                          </a>
+                          <hr>
+                        </div>
+                        <div class="col-6">
+                          <a href="">
+                            <img src="./assets/images/brands/cruicial.png" alt="">
+                          </a>
+                          <hr>
+                        </div>
+                        <div class="col-6">
+                          <a href="">
+                            <img src="./assets/images/brands/dell.png" alt="">
+                          </a>
+                          <hr>
+                        </div>
+                        <div class="col-6">
+                          <a href="">
+                            <img src="./assets/images/brands/epson.png" alt="">
+                          </a>
+                          <hr>
+                        </div>
+                        <div class="col-6">
+                          <a href="">
+                            <img src="./assets/images/brands/hp.png" alt="">
+                          </a>
+                          <hr>
+                        </div>
+                        <div class="col-6">
+                          <a href="">
+                            <img src="./assets/images/brands/intel.png" alt="">
+                          </a>
+                          <hr>
+                        </div>
+                        <div class="col-6">
+                          <a href="">
+                            <img src="./assets/images/brands/lenovo.png" alt="">
+                          </a>
+                          <hr>
+                        </div>
+                        <div class="col-6">
+                          <a href="">
+                            <img src="./assets/images/brands/lg.png" alt="">
+                          </a>
+                          <hr>
+                        </div>
+                        <div class="col-6">
+                          <a href="">
+                            <img src="./assets/images/brands/linksys.png" alt="">
+                          </a>
+                          <hr>
+                        </div>
+                        <div class="col-6">
+                          <a href="">
+                            <img src="./assets/images/brands/netgear.png" alt="">
+                          </a>
+                          <hr>
+                        </div>
+                        <div class="col-6">
+                          <a href="">
+                            <img src="./assets/images/brands/nvidia.png" alt="">
+                          </a>
+                          <hr>
+                        </div>
+                        <div class="col-6">
+                          <a href="">
+                            <img src="./assets/images/brands/powerspec.png" alt="">
+                          </a>
+                          <hr>
+                        </div>
+                        <div class="col-6">
+                          <a href="">
+                            <img src="./assets/images/brands/samsung.png" alt="">
+                          </a>
+                          <hr>
+                        </div>
+                        <div class="col-6">
+                          <a href="">
+                            <img src="./assets/images/brands/shure.jpg" alt="">
+                          </a>
+                          <hr>
+                        </div>
+                        <div class="col-6">
+                          <a href="">
+                            <img src="./assets/images/brands/tplink.svg" alt="">
+                          </a>
+                          <hr>
+                        </div>
+                        <div class="col-6">
+                          <a href="">
+                            <img src="./assets/images/brands/wd.png" alt="">
+                          </a>
+                          <hr>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                   <div class="dropdown">
                     <button
