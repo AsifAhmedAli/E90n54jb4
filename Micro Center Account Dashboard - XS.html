@@ -37,6 +37,7 @@
                       type="button"
                       id="dropdownMenuButton1"
                       data-bs-toggle="dropdown"
+                      data-bs-auto-close="outside"
                       aria-expanded="false"
                     >
                       <i class="fa-solid fa-shop"></i>
@@ -54,15 +55,32 @@
                       class="dropdown-menu"
                       aria-labelledby="dropdownMenuButton1"
                     >
-                      <li><a class="dropdown-item" href="#">Action</a></li>
-                      <li>
-                        <a class="dropdown-item" href="#">Another action</a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item" href="#"
-                          >Something else here</a
-                        >
-                      </li>
+                      <div class="header-mayfield-dropdown px-3 py-2">
+                        <h4 class="page-title">Your Store</h4>
+                        <form action="">
+                          <select name="" id="" class="form-select">
+                            <option value="">Mayfield Heights</option>
+                          </select>
+                        </form>
+                        <p class="address">
+                          1349 Som Center Rd<br />Eastgate Shopping Center<br />Mayfield
+                          Heights, OH 44124
+                        </p>
+                        <p class="status text-success">Open Now</p>
+                        <p class="time">Mon - Sat 10 to 9, Sun 11 to 6</p>
+                        <div class="d-flex">
+                          <button
+                            class="btn btn-sm btn-primary text-uppercase text-nowrap me-2"
+                          >
+                            Get Directions
+                          </button>
+                          <button
+                            class="btn btn-sm btn-primarydark text-uppercase text-nowrap me-2"
+                          >
+                            Shop My Store
+                          </button>
+                        </div>
+                      </div>
                     </ul>
                   </div>
                   <div class="dropdown">
@@ -89,15 +107,42 @@
                       class="dropdown-menu"
                       aria-labelledby="dropdownMenuButton1"
                     >
-                      <li><a class="dropdown-item" href="#">Action</a></li>
-                      <li>
-                        <a class="dropdown-item" href="#">Another action</a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item" href="#"
-                          >Something else here</a
-                        >
-                      </li>
+                      <div class="header-mayfield-dropdown px-3 py-2">
+                        <h4 class="page-title">Your Account</h4>
+                        <div class="d-flex align-items-center gap-2 mb-2">
+                          <img src="./assets/images/profile-image.png" alt="" class="user-img">
+                          <div>
+                            <p class="user-name">Rick Mershad</p>
+                            <p class="user-duration">Customer Since 2012</p>
+                          </div>
+                        </div>
+                        <div class="row g-2">
+                          <div class="d-flex gap-2">
+                            <a href="" class="btn btn-sm btn-outline-secondary text-nowrap visit pe-4">
+                              Account
+                            </a>
+                            <a href="" class="btn btn-sm btn-outline-secondary text-nowrap visit pe-4">
+                              Orders
+                            </a>
+                          </div>
+                          <div class="d-flex gap-2">
+                            <a href="" class="btn btn-sm btn-outline-secondary text-nowrap visit pe-4">
+                              Favorites
+                            </a>
+                            <a href="" class="btn btn-sm btn-outline-secondary text-nowrap visit pe-4">
+                              Returns
+                            </a>
+                          </div>
+                          <div class="d-flex gap-2">
+                            <a href="" class="btn btn-sm btn-outline-secondary text-nowrap visit pe-4">
+                              Service
+                            </a>
+                            <a href="" class="btn btn-sm btn-outline-secondary text-nowrap visit pe-4">
+                              Logout
+                            </a>
+                          </div>
+                        </div>
+                      </div>
                     </ul>
                   </div>
                   <a href="" class="cart">
@@ -1418,7 +1463,7 @@
             </div>
             <div class="row position-relative flex-lg-nowrap">
               <div
-                class="d-lg-inline-block w-auto d-flex align-items-center justify-content-between mb-4"
+                class="d-lg-inline-block digicert-container d-flex align-items-center justify-content-between mb-4"
               >
                 <img src="./assets/images/logo.svg" height="70" alt="" />
                 <div class="d-flex flex-column align-items-end digicert">

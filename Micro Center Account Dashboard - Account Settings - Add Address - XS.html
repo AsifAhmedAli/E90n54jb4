@@ -12,7 +12,7 @@
   </head>
   <body>
     <main>
-      <div class="mobile-container">
+      <div class="mobile-container desktop-container">
         <header>
           <div class="main-header">
             <div class="container">
@@ -20,7 +20,7 @@
                 class="row align-items-center justify-content-between flex-nowrap mb-2"
               >
                 <div class="left">
-                  <button class="humburger">
+                  <button class="humburger d-lg-none d-block">
                     <i class="fa-solid fa-bars"></i>
                   </button>
                   <a href="">
@@ -33,6 +33,40 @@
                   </a>
                 </div>
                 <div class="right">
+                  <div class="dropdown d-lg-block d-none">
+                    <button
+                      class="btn text-nowrap"
+                      type="button"
+                      id="dropdownMenuButton1"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      <i class="fa-solid fa-shop"></i>
+                      <div class="me-1 ms-2">
+                        <p class="name mb-1">Mayfield Heights</p>
+                        <div
+                          class="badge bg-primary rounded-pill d-lg-block d-none"
+                        >
+                          Open Until 10pm
+                        </div>
+                      </div>
+                      <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+                    <ul
+                      class="dropdown-menu"
+                      aria-labelledby="dropdownMenuButton1"
+                    >
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li>
+                        <a class="dropdown-item" href="#">Another action</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          >Something else here</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
                   <div class="dropdown">
                     <button
                       class="btn text-nowrap"
@@ -42,7 +76,15 @@
                       aria-expanded="false"
                     >
                       <i class="fa-regular fa-circle-user"></i>
-                      <p class="name mb-0 me-1 ms-2">Rick</p>
+                      <div class="mb-0 me-1 ms-2 text-start">
+                        <p class="name mb-0">
+                          <span class="d-lg-inline-block d-none">Hello,</span>
+                          Rick
+                        </p>
+                        <p class="bottom-text d-lg-block d-none mb-0">
+                          Returns & Orders
+                        </p>
+                      </div>
                       <i class="fa-solid fa-chevron-down"></i>
                     </button>
                     <ul
@@ -62,16 +104,20 @@
                   </div>
                   <a href="" class="cart">
                     <i class="fa-solid fa-cart-shopping"></i>
+                    <div class="ms-75 d-lg-block d-none">
+                      <p class="mb-0 name">Cart</p>
+                      <p class="bottom-text">& Lists</p>
+                    </div>
                   </a>
                 </div>
               </div>
-              <div class="row">
+              <div class="row search-me">
                 <form action="">
                   <div class="search-container">
                     <input
                       type="text"
                       class="form-control"
-                      placeholder="Search Micro Center"
+                      placeholder="Search everything at Micro Center online and in store"
                     />
                     <button class="search">
                       <i class="fa-solid fa-magnifying-glass"></i>
@@ -96,7 +142,14 @@
                       aria-expanded="false"
                     >
                       <i class="fa-solid fa-shop"></i>
-                      <p class="name mb-0 me-1 ms-2">Mayfield Heights</p>
+                      <div>
+                        <p class="name mb-0 me-1 ms-2">Mayfield Heights</p>
+                        <div
+                          class="badge bg-primary rounded-pill d-lg-block d-none"
+                        >
+                          Open Until 10pm
+                        </div>
+                      </div>
                       <i class="fa-solid fa-chevron-down"></i>
                     </button>
                     <ul
@@ -115,7 +168,7 @@
                     </ul>
                   </div>
                 </div>
-                <div class="right w-auto">
+                <div class="right w-auto d-lg-none d-block">
                   <div class="badge bg-primary rounded-pill">
                     Open Until 10pm
                   </div>
@@ -123,9 +176,192 @@
               </div>
             </div>
           </div>
+
+          <div class="my-options d-lg-block d-none">
+            <div class="container">
+              <div class="row justify-content-between flex-nowrap">
+                <div class="left w-auto">
+                  <div class="btn-group">
+                    <button
+                      class="btn"
+                      type="button"
+                      id="dropdownMenuButton1"
+                      data-bs-toggle="dropdown"
+                      data-bs-auto-close="outside"
+                      aria-expanded="false"
+                    >
+                      Products
+                      <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+                    <ul
+                      class="dropdown-menu"
+                      aria-labelledby="dropdownMenuButton1"
+                    >
+                      <li>
+                        <a class="dropdown-item" href="#">
+                          <div class="btn-group dropend">
+                            <button
+                              type="button"
+                              class="btn"
+                              data-bs-toggle="dropdown"
+                              aria-expanded="false"
+                            >
+                              Refurbished Deals
+                              <i class="fa-solid fa-chevron-right"></i>
+                            </button>
+                            <ul class="dropdown-menu">
+                              <!-- Dropdown menu links -->
+                            </ul>
+                          </div>
+                        </a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">
+                          <div class="btn-group dropend">
+                            <button
+                              type="button"
+                              class="btn"
+                              data-bs-toggle="dropdown"
+                              aria-expanded="false"
+                            >
+                              Software & Gaming
+                              <i class="fa-solid fa-chevron-right"></i>
+                            </button>
+                            <ul class="dropdown-menu">
+                              <!-- Dropdown menu links -->
+                            </ul>
+                          </div>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="dropdown">
+                    <button
+                      class="btn"
+                      type="button"
+                      id="dropdownMenuButton1"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      Brands
+                      <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+                    <ul
+                      class="dropdown-menu"
+                      aria-labelledby="dropdownMenuButton1"
+                    >
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li>
+                        <a class="dropdown-item" href="#">Another action</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          >Something else here</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="dropdown">
+                    <button
+                      class="btn"
+                      type="button"
+                      id="dropdownMenuButton1"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      PC Parts
+                      <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+                    <ul
+                      class="dropdown-menu"
+                      aria-labelledby="dropdownMenuButton1"
+                    >
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li>
+                        <a class="dropdown-item" href="#">Another action</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          >Something else here</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="dropdown">
+                    <button
+                      class="btn"
+                      type="button"
+                      id="dropdownMenuButton1"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      Computers
+                      <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+                    <ul
+                      class="dropdown-menu"
+                      aria-labelledby="dropdownMenuButton1"
+                    >
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li>
+                        <a class="dropdown-item" href="#">Another action</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          >Something else here</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="dropdown">
+                    <button
+                      class="btn"
+                      type="button"
+                      id="dropdownMenuButton1"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      Service & Repair
+                      <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+                    <ul
+                      class="dropdown-menu"
+                      aria-labelledby="dropdownMenuButton1"
+                    >
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li>
+                        <a class="dropdown-item" href="#">Another action</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          >Something else here</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="dropdown">
+                    <a class="btn" href="">Help</a>
+                  </div>
+                  <div class="dropdown">
+                    <a class="btn" href="">Community</a>
+                  </div>
+                </div>
+                <div class="right w-auto">
+                  <div class="dropdown">
+                    <button
+                      class="btn p-0 shadow-none text-uppercase text-primary"
+                    >
+                      18 min in-store pickup
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <hr class="mt-2" />
+          </div>
         </header>
         <div class="content">
-          <div class="double-padding">
+          <div class="double-padding same-mobile-container">
             <div class="container">
               <div class="d-flex align-items-center mb-3">
                 <button class="btn back-btn">
